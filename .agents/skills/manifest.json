@@ -7,9 +7,6 @@
     "cut-not-add",
     "id-screenwriter-growth",
     "loop-until-confidence-coding",
-    "makalah-audit-harness",
-    "makalah-ui-workflow",
-    "makalah-whitebook",
     "obsidian-llm-vault",
     "regression-closure-via-diff",
     "screenplay-scene-drafting",
@@ -498,12 +495,10 @@
   },
   "retired": [
     "harness-architect",
-    "makalah-durable-harness",
     "film-agentic-init",
     "obsidian-bases",
     "obsidian-cli",
-    "obsidian-vault",
-    "eriksupit-prosa"
+    "obsidian-vault"
   ],
   "schema_version": 1
 }

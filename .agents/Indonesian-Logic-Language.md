@@ -50,11 +50,11 @@ Cacat ini tidak terasa salah dari dalam karena terasa seperti menulis dengan cer
 
 **Ranah.** `umum`
 
-## [2026-09-22] Kasus regresi prosa eksplanatoris yang diserap dari eriksupit-prosa
+## [2026-09-22] Kasus regresi prosa eksplanatoris yang diserap dari skill proyek lain yang sudah dibubarkan
 
 **Ranah:** sejarah, umum.
 
-**Asal.** Tujuh kasus berikut hidup di `.agents/skills/eriksupit-prosa/references/semantic-gates.md` sebelum skill itu dibubarkan pada 2026-09-22. Kasusnya spesifik pada satu proyek, jadi tempatnya di catatan hidup ini, bukan di pedoman gaya universal.
+**Asal.** Tujuh kasus berikut berasal dari skill proyek lain yang sudah dibubarkan pada 2026-09-22. Kasusnya spesifik pada satu proyek, jadi tempatnya di catatan hidup ini, bukan di pedoman gaya universal.
 
 | Ditolak | Sebab | Dipakai |
 |---|---|---|

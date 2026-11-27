@@ -778,6 +778,9 @@ def main() -> int:
     if args.command in ("compact-archive", "prune-archive") and not args.location:
         print(f"ERROR --location is required for {args.command}")
         return 2
+    if args.command == "check" and not (root / ".agents/Memory.md").is_file() and not (root / ".agents/memory").is_dir():
+        print("SKIP check (no .agents/Memory.md or .agents/memory/; public clone without governance store)")
+        return 0
     try:
         facts = load_facts(root)
         validate_facts(facts, root)

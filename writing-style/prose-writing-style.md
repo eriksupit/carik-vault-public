@@ -164,4 +164,4 @@ Bagian ini adalah memori preferensi gaya prosa proyek ini. Ketika pengguna menet
 
 ### [2026-09-22] Pembatasan pemakaian kata `daya`
 
-Gunakan `daya` hanya pada bentuk gabungan baku: `daya beli`, `daya angkut`, `daya tahan`, `daya guna`, `sumber daya`. Di luar bentuk itu, sebut maknanya secara spesifik — `dana`, `aset`, `cadangan`, `komoditas`, `kekayaan`, atau `kemampuan`. Diserap dari skill `eriksupit-prosa` saat skill itu dibubarkan.
+Gunakan `daya` hanya pada bentuk gabungan baku: `daya beli`, `daya angkut`, `daya tahan`, `daya guna`, `sumber daya`. Di luar bentuk itu, sebut maknanya secara spesifik — `dana`, `aset`, `cadangan`, `komoditas`, `kekayaan`, atau `kemampuan`.
