@@ -1,0 +1,14 @@
+{
+  "session_id": "<SESSION_ID>",
+  "turn_id": "<TURN_ID>",
+  "transcript_path": "<TRANSCRIPT_PATH>",
+  "cwd": "<VAULT_ROOT>",
+  "hook_event_name": "PreToolUse",
+  "model": "gpt-5.6-sol",
+  "permission_mode": "bypassPermissions",
+  "tool_name": "apply_patch",
+  "tool_input": {
+    "command": "*** Begin Patch\n*** Update File: /private/tmp/vault-codex-hook-patch-probe.txt\n@@\n-before\n+after\n*** End Patch"
+  },
+  "tool_use_id": "<TOOL_USE_ID>"
+}

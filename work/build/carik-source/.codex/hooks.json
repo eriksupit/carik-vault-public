@@ -1,0 +1,16 @@
+{
+  "description": "Public Carik Vault Class C PreToolUse guard (fail-open without python3).",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; for H in .agents/hooks/public-pretool.py hooks/public-pretool.py; do [ -f \"$H\" ] && exec python3 \"$H\"; done; exit 0"
+          }
+        ]
+      }
+    ]
+  }
+}

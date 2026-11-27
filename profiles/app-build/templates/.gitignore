@@ -1,0 +1,45 @@
+# Obsidian local cache & UI state
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.DS_Store
+
+# Environment & credentials
+.env
+.env.*
+*.env
+!.env.example
+
+# Python & virtual environments
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Node / JS / TS / Build artifacts
+node_modules/
+dist/
+build/
+.next/
+coverage/
+target/
+
+# Temporary inspection cache
+.taste-skill/
+
+# Governance distribution transaction state (scripts/distribute_governance.py)
+.agents/.dist-bak/
+.agents/.dist-journal.json
+.agents/.dist-staging-*/
+
+# Generated HTML previews and local runtime state
+.agents/previews/
+.agents/allow-external
+.agents/approvals/
+.agents/telemetry/
+.agents/sessions/workers/
+.pi/

@@ -1,0 +1,77 @@
+{
+  "description": "Vault-local lifecycle hooks using the canonical .agents/hooks policy tree.",
+  "hooks": {
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct governance-reminder.py"
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct interview_session_hook.py prompt codex"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": ".*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct vault-boundary-guard.py --interactive-approval --runtime=codex"
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct incident-gate.py"
+          }
+        ]
+      },
+      {
+        "matcher": "^Bash$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct git-scope-guard.py"
+          }
+        ]
+      },
+      {
+        "matcher": "^(apply_patch|Write|Edit)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" patch-pre"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "^(apply_patch|Write|Edit)$",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" patch-post"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct incident-gate.py stop"
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/codex-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" direct interview_session_hook.py verify codex"
+          }
+        ]
+      }
+    ]
+  }
+}

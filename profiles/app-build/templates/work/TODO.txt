@@ -1,0 +1,6 @@
+Status Kerja Rekayasa Perangkat Lunak ({{PROJECT_NAME}}):
+[ ] Tahap 1: Riset masalah dan batasan di work/research/intake.md
+[ ] Tahap 2: Menyusun dan menyetujui dokumen desain di docs/design/
+[ ] Tahap 3: Menyusun rencana implementasi di work/implementation-plan/ & docs/plans/
+[ ] Tahap 4: Membangun kode sumber dan tes di work/build/
+[ ] Tahap 5: Verifikasi deterministik dan ulasan di work/verification/ & work/review/

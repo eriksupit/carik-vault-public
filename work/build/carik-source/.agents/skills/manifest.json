@@ -1,0 +1,161 @@
+{
+  "global_only": [],
+  "harness_owned": {
+    "anti-sycophancy": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "backup-drive": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "bootstrap": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "brave": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "browsing": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "canvas": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "carik-guided-goal": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "clarify": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "closing": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "confidence": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "create-carik-skill": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "debate": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "define-goal": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "goal": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "handoff": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "id-prose": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "make-pdf": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "markdown": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "notulen": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "orient": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "pdf-ocr": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "pdf-read": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "recommend": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "remember": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "scratchpad": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "session-log": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "show-visual": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "simplify": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "split-task": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    },
+    "update-carik": {
+      "generated": "universal",
+      "publish_user": false,
+      "live_data": []
+    }
+  },
+  "namespace_patterns": {
+    "profile": "<profile>-<skill>",
+    "project": "<project>-<skill>"
+  },
+  "retired": [],
+  "schema_version": 1
+}

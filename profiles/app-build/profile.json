@@ -1,0 +1,22 @@
+{
+  "name": "app-build",
+  "title": "Application Build (Carik Software Engineering)",
+  "description": "Profil rekayasa perangkat lunak deterministik: research, design doc, implementation plan, build, verification, dan review.",
+  "prose_language": "id",
+  "evidence_bearing": [],
+  "pipeline": [
+    "research",
+    "implementation-plan",
+    "build",
+    "verification",
+    "review"
+  ],
+  "entry_stage": "research",
+  "entry_artifacts": [
+    {
+      "template": "templates/research/intake.md",
+      "target": "research/intake.md",
+      "initial_status": "research-pending"
+    }
+  ]
+}

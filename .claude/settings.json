@@ -1,0 +1,115 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/wire-skills.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/interview_session_hook.py\" session-start claude-code"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "Bash|Read|Write|Edit|Glob|Grep|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/vault-boundary-guard.py\" --interactive-approval --runtime=claude-code"
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/incident-gate.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/git-scope-guard.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/goal-contract-gate.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/discussion-intake-gate.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/prose-language-gate.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/artifact-research-gate.py\""
+          }
+        ]
+      },
+      {
+        "matcher": "Skill",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/skill-usage-recorder.py\""
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/frontmatter-reminder.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/artifact-preview-gate.py\""
+          }
+        ]
+      }
+    ],
+    "UserPromptSubmit": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/governance-reminder.py\""
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/interview_session_hook.py\" prompt claude-code"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/incident-gate.py\" stop"
+          },
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; python3 \"$CLAUDE_PROJECT_DIR/.agents/hooks/interview_session_hook.py\" verify claude-code"
+          }
+        ]
+      }
+    ]
+  }
+}

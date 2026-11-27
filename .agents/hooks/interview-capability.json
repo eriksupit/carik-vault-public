@@ -1,0 +1,88 @@
+{
+  "protocol_version": 1,
+  "policy": "A capability is reported `proven` only when a real-runtime probe record names the verified event payload. Configuration presence, file presence, and adapter wiring never produce `proven`; an unprobed capability stays `partial` or `unavailable`.",
+  "capabilities": [
+    "stable-session-identity",
+    "startup-recovery",
+    "prompt-opening",
+    "current-turn-activation",
+    "assistant-output-visibility",
+    "stop-verification-and-blocking",
+    "atomic-vault-mutation",
+    "closure-lifecycle",
+    "diagnostic-retry",
+    "credential-redaction"
+  ],
+  "runtimes": {
+    "claude-code": {
+      "posture": "partial",
+      "native_events": ["SessionStart", "UserPromptSubmit", "Stop"],
+      "capability_status": {
+        "stable-session-identity": "partial",
+        "startup-recovery": "partial",
+        "prompt-opening": "partial",
+        "current-turn-activation": "partial",
+        "assistant-output-visibility": "unavailable",
+        "stop-verification-and-blocking": "partial",
+        "atomic-vault-mutation": "partial",
+        "closure-lifecycle": "partial",
+        "diagnostic-retry": "partial",
+        "credential-redaction": "partial"
+      },
+      "probes": {}
+    },
+    "codex": {
+      "posture": "partial",
+      "native_events": ["UserPromptSubmit", "PreToolUse", "PostToolUse", "Stop"],
+      "capability_status": {
+        "stable-session-identity": "partial",
+        "startup-recovery": "unavailable",
+        "prompt-opening": "partial",
+        "current-turn-activation": "partial",
+        "assistant-output-visibility": "unavailable",
+        "stop-verification-and-blocking": "partial",
+        "atomic-vault-mutation": "partial",
+        "closure-lifecycle": "partial",
+        "diagnostic-retry": "partial",
+        "credential-redaction": "partial"
+      },
+      "probes": {}
+    },
+    "antigravity": {
+      "posture": "partial",
+      "native_events": ["PreInvocation", "PreToolUse", "PostToolUse", "Stop"],
+      "notes": "PreInvocation is an invocation event, not a native SessionStart; startup recovery is therefore never reported as proven from it.",
+      "capability_status": {
+        "stable-session-identity": "partial",
+        "startup-recovery": "unavailable",
+        "prompt-opening": "partial",
+        "current-turn-activation": "partial",
+        "assistant-output-visibility": "unavailable",
+        "stop-verification-and-blocking": "partial",
+        "atomic-vault-mutation": "partial",
+        "closure-lifecycle": "partial",
+        "diagnostic-retry": "partial",
+        "credential-redaction": "partial"
+      },
+      "probes": {}
+    },
+    "deepseek": {
+      "posture": "unavailable (advisory)",
+      "native_events": [],
+      "notes": "No native hook runner; the adapter is agent-invoked, so every interview capability is advisory by construction.",
+      "capability_status": {
+        "stable-session-identity": "unavailable",
+        "startup-recovery": "unavailable",
+        "prompt-opening": "unavailable",
+        "current-turn-activation": "unavailable",
+        "assistant-output-visibility": "unavailable",
+        "stop-verification-and-blocking": "unavailable",
+        "atomic-vault-mutation": "unavailable",
+        "closure-lifecycle": "unavailable",
+        "diagnostic-retry": "unavailable",
+        "credential-redaction": "unavailable"
+      },
+      "probes": {}
+    }
+  }
+}

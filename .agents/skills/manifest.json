@@ -1,0 +1,509 @@
+{
+  "global_only": [
+    "beat-scene-connectivity-audit",
+    "beat2scene-breakdown",
+    "character-voice-derivation",
+    "cut-hunt",
+    "cut-not-add",
+    "id-screenwriter-growth",
+    "loop-until-confidence-coding",
+    "makalah-audit-harness",
+    "makalah-ui-workflow",
+    "makalah-whitebook",
+    "obsidian-llm-vault",
+    "regression-closure-via-diff",
+    "screenplay-scene-drafting",
+    "system-prompt-architect",
+    "visual-causal-card-builder"
+  ],
+  "harness_owned": {
+    "agent-verify-supervisor-instruction": {
+      "publish_user": true,
+      "generated": "universal",
+      "live_data": []
+    },
+    "anti-sycophancy": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "anti-translationese": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "artifact-research-loop": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "artifact-viewer": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "audit-patch-gaps": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "bootstrap": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "branch-scope": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "brave": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "closure-procedure": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "codebase-design": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "concept-architect": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "confidence": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "debate-forum": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "deepseek-governance-runner": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "define-goal": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "define-problem": {
+      "publish_user": true,
+      "generated": "universal",
+      "live_data": []
+    },
+    "diagnosing-bugs": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "diskusi": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "explain-humanize": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "file-over-app-init": {
+      "generated": "never",
+      "live_data": [],
+      "publish_user": true
+    },
+    "goal": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "graphify": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "grill-with-docs": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "handoff": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "herdr-multi-pane": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "improve-codebase-architecture": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "indonesian-logic-growth": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "interview-protocol": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "json-canvas": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "konversi-bahasa-logis": {
+      "generated": "never",
+      "live_data": [],
+      "publish_user": false
+    },
+    "loop-until-confidence": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "meeting-minutes": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "memory-keeper": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "obsidian-markdown": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "pane-management": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "pdf-ingest": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "pdf-ocr": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "project-governance-sync": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "recommendation": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "research-before-dispatch": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "root-cause-investigation": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "session-anchors": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "session-checkpoint": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "stage-reset": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "summary-first-approval": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": true
+    },
+    "supervisor-verify-agent-report": {
+      "publish_user": true,
+      "generated": "universal",
+      "live_data": []
+    },
+    "task-decomposer": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "vault-orientation": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "vault-update": {
+      "generated": "never",
+      "live_data": [],
+      "publish_user": true
+    },
+    "visual-report": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "anti-ambigu": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": false
+    },
+    "laziness-protocol": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "bagaimana": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "bedah-naskah": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "brainstorming": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "carik-curator": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "carik-onboarding": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "guided-goal": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "kenapa": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": true
+    },
+    "carik-adversarial-review": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": false
+    },
+    "image-vectorize": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": false
+    },
+    "split-task": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "notulen": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "remember": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "show-visual": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "clarify": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "recommend": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "simplify": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "debate": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "session-log": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "orient": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "id-prose": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "markdown": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "canvas": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "pdf-read": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "deepseek-runner": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "make-pdf": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "backup-drive": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "create-carik-skill": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "carik-guided-goal": {
+      "generated": "profile",
+      "profiles": [
+        "carik"
+      ],
+      "live_data": [],
+      "publish_user": false
+    },
+    "browsing": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "closing": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "update-carik": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "scratchpad": {
+      "generated": "universal",
+      "live_data": [],
+      "publish_user": false
+    },
+    "architect": {
+      "generated": "profile",
+      "profiles": [
+        "app-build"
+      ],
+      "live_data": [],
+      "publish_user": false
+    },
+    "to-prd": {
+      "generated": "profile",
+      "profiles": [
+        "app-build"
+      ],
+      "live_data": [],
+      "publish_user": false
+    }
+  },
+  "namespace_patterns": {
+    "profile": "<profile>-<skill>",
+    "project": "<project>-<skill>"
+  },
+  "retired": [
+    "harness-architect",
+    "makalah-durable-harness",
+    "film-agentic-init",
+    "obsidian-bases",
+    "obsidian-cli",
+    "obsidian-vault",
+    "eriksupit-prosa"
+  ],
+  "schema_version": 1
+}

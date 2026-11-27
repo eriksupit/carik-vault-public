@@ -1,0 +1,39 @@
+{
+  "vault-governance": {
+    "enabled": true,
+    "PreInvocation": [
+      {
+        "type": "command",
+        "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/antigravity-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" pre-invocation"
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/antigravity-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" pre-tool"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/antigravity-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" post-tool"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "type": "command",
+        "command": "command -v python3 >/dev/null 2>&1 || exit 0; H=\"$(git rev-parse --show-toplevel 2>/dev/null || pwd)/.agents/hooks/antigravity-adapter.py\"; [ -f \"$H\" ] || exit 0; python3 \"$H\" stop"
+      }
+    ]
+  }
+}

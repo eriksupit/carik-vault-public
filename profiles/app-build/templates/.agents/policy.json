@@ -1,0 +1,9 @@
+{
+  "prose_language": "id",
+  "evidence_bearing": [],
+  "conversation_genre": "colloquial-akrab",
+  "exempt_paths": [
+    "work/build/**",
+    "work/research/**"
+  ]
+}

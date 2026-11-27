@@ -1,0 +1,17 @@
+{
+  "description": "Hooks legitimately dispatched by fewer than all four runtimes. Each entry names the runtimes that dispatch it and why the asymmetry is correct. An undeclared asymmetry fails scripts/verify_activation.py.",
+  "hooks": {
+    "wire-skills.py": {
+      "runtimes": ["claude"],
+      "reason": "Installer that materializes the Claude skill mirror; it is not a gate and has no meaning under another runtime."
+    },
+    "skill-usage-recorder.py": {
+      "runtimes": ["claude"],
+      "reason": "Claude-only telemetry recorder. The other adapters record skill usage through lib/telemetry.py directly."
+    },
+    "interview_session_hook.py": {
+      "runtimes": ["claude", "codex", "antigravity"],
+      "reason": "DeepSeek cannot support turn-level session continuity because its adapter lacks native turn-start and reliable sealing lifecycle events; interview-capability.json reports it unavailable."
+    }
+  }
+}

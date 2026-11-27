@@ -1,0 +1,35 @@
+# Layer 1: Universal Syntactic & Structural Calques (Domain-Agnostic)
+# Pola cacat struktur bahasa Inggris murni yang dilarang di semua jenis dokumen.
+
+# Kalke Relatif / Wh-Relativizer
+di mana hal tersebut
+yang mana hal ini
+di atas mana
+dalam mana
+kepada siapa
+
+# Dekomposisi Predikat / Verba Hampa Perifrastik (Light-Verb Clutter)
+melakukan pengangkutan
+melakukan pemeriksaan
+melakukan penolakan
+melakukan pertemuan
+mengadakan pertemuan
+membuat keputusan
+mengambil penimbangan
+merupakan suatu bentuk
+
+# Deiksis Kamera Maya / Spasial Melayang
+di balik bahunya
+melalui sudut matanya
+dari sudut pandang kamera
+terasa adanya suasana
+tampak bahwa
+terlihat jelas bahwa
+
+# Asumsi Batin Narator Tak Kasatmata
+tidak ada yang bisa menghentikannya
+menunggu untuk dieksekusi
+tersisa dalam keheningan
+
+# Istilah kerja yang diterjemahkan sampai maknanya bergeser (aturan pemilik 2026-08-31)
+buku besar
